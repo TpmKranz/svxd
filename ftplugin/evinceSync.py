@@ -153,7 +153,7 @@ class EvinceSyncView():
                       evince_name)
         if (evince_name != "") and (evince_name is not None):
             self.evince_name = evince_name
-            ev_obj = self.bus.get_object(evince_name, "/org/x/reader/Evince")
+            ev_obj = self.bus.get_object(evince_name, "/org/x/reader/Xreader")
             ev_obj.GetWindowList(
                 reply_handler=self.handle_get_window_list_reply,
                 error_handler=self.handle_get_window_list_error,
